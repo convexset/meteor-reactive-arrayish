@@ -1,7 +1,7 @@
 Package.describe({
 	name: 'convexset:reactive-arrayish',
 	version: '0.1.0',
-	summary: 'Provides an array-like reactive collection that plays well with Blaze (i.e.: #each), can be manipulated like an array, and provides useful reactive functionality such as filter-map-reduce.',
+	summary: 'An array-like reactive collection that plays well with Blaze (i.e.: #each)',
 	git: 'https://github.com/convexset/reactive-arrayish',
 	documentation: 'README.md'
 });
