@@ -10,6 +10,8 @@ In any event, this provides a "truly" reactive client-side object store that:
 
 The reactivity works nicely (with Blaze) because the object is backed by a local `Mongo.Collection`.
 
+A nice-ish example is provided that requires `dburles:google-maps`. (It can be prettified using `semantic:ui`.)
+
 # API
 
 ## Getters

@@ -1,0 +1,54 @@
+<template name="DemoReactiveArrayish">
+	<h1>Reactive Array-ish Demo</h1>
+
+	<p>
+		Requires: <code>dburles:google-maps</code>
+	</p>
+	<p>
+		Looks prettier with: <code>semantic:ui</code>
+	</p>
+
+	<div class="column">
+		<div class="map-container">
+			{{> googleMap name="locationMap" options=mapOptions}}
+		</div>
+	</div>
+	
+	{{#if haveLocations}}
+		<div class="column">&nbsp;</div>
+		<div class="column">
+			<table class="ui celled padded table">
+				<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>Address</th>
+						<th>Remove</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each locations}}
+						{{> LocationRow}}
+					{{/each}}
+				</tbody>
+			</table>
+		</div>
+	{{/if}}
+	
+</template>
+
+<template name="LocationRow">
+	<tr>
+		<td><h3 class="ui center aligned header"><a href="#">{{label}}</a></h3></td>
+		<td class="ui form">
+			<div class="field">
+				<label>Address</label>
+				<input type="text" class="address-input" id="address_{{idx}}" value="{{address}}">
+			</div>
+			<div class="field">
+				<label>Notes</label>
+				<input type="text" class="notes-input" id="notes_{{idx}}" value="{{notes}}">
+			</div>
+		</td>
+		<td class="right aligned collapsing"><button>Remove</button></td>
+	</tr>
+</template>
