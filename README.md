@@ -12,9 +12,14 @@ The reactivity works nicely (with Blaze) because the object is backed by a local
 
 A nice-ish example is provided that requires `dburles:google-maps`. (It can be prettified using `semantic:ui`.)
 
-# API
+## Install
 
-## Getters
+This is available as [`convexset:reactive-arrayish`](https://atmospherejs.com/convexset/reactive-arrayish) on [Atmosphere](https://atmospherejs.com/). (Install with `meteor add convexset:reactive-arrayish`.)
+
+
+## API
+
+### Getters
 
 `get(selector, sortDefinition, mapper, reducer, initialValue)`
  - `selector`: a selector such as `{x: {$gt: 5}}`
@@ -42,7 +47,7 @@ A nice-ish example is provided that requires `dburles:google-maps`. (It can be p
  - `__getAll_Raw_NR()`: returns the contents of the `Mongo.Collection` holding the data.
  - `__getIdArray_NR()`: returns the underlying `Array` holding the relevant `_id`'s.
 
-## Population Control
+### Population Control
 
 As a preliminary note, beware of "recursive-ish objects" which blow up call-stacks. 
 
@@ -80,7 +85,7 @@ As a preliminary note, beware of "recursive-ish objects" which blow up call-stac
 
 `removeBySelector(selector)`: removes all objects matching [`selector`](http://docs.meteor.com/#/full/selectors)
 
-## indexOf-type Methods
+### indexOf-type Methods
 
 `indexOf(searchElement, fromIndex)`: gets the first index (at or after `fromIndex`) matching `searchElement`
 
@@ -93,8 +98,6 @@ As a preliminary note, beware of "recursive-ish objects" which blow up call-stac
  - `lastIndexOf_NR`
  - `allIndicesOf_NR`
 
-
-
-## Misc Methods
+### Misc Methods
 
 `reverse()`: Reverses an array in place.
