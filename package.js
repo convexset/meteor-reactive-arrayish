@@ -9,12 +9,12 @@ Package.describe({
 Package.onUse(function(api) {
 	api.versionsFrom('1.2.0.2');
 	api.use(['ecmascript', 'mongo', 'tracker', 'underscore'], 'client');
-	api.addFiles('reactive-arrayish.js');
-	api.export('ReactiveArrayish');
+	api.addFiles(['reactive-arrayish.js'], 'client');
+	api.export(['ReactiveArrayish'], 'client');
 });
 
 Package.onTest(function(api) {
-	api.use(['ecmascript', 'mongo', 'tracker', 'underscore', 'convexset:reactive-arrayish'], 'client');
 	api.use('tinytest');
+	api.use(['ecmascript', 'mongo', 'tracker', 'underscore', 'convexset:reactive-arrayish'], 'client');
 	api.addFiles(['tests.js'], 'client');
 });
