@@ -14,7 +14,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-	api.use('tinytest');
+	api.use(['tinytest'], 'client');
 	api.use(['ecmascript', 'mongo', 'tracker', 'underscore', 'convexset:reactive-arrayish'], 'client');
 	api.addFiles(['tests.js'], 'client');
 });
