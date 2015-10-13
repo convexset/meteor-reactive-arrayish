@@ -17,7 +17,7 @@ A nice-ish example is provided that requires `dburles:google-maps`. (It can be p
 This is available as [`convexset:reactive-arrayish`](https://atmospherejs.com/convexset/reactive-arrayish) on [Atmosphere](https://atmospherejs.com/). (Install with `meteor add convexset:reactive-arrayish`.)
 
 
-## API
+## Usage
 
 ### Getters
 
