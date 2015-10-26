@@ -100,4 +100,6 @@ As a preliminary note, beware of "recursive-ish objects" which blow up call-stac
 
 ### Misc Methods
 
+`observe(selector, options, callbacks)` and `observeChanges(selector, options, callbacks)`: creates a cursor on the underlying collection with [`.find(selector, options)`](http://docs.meteor.com/#/full/find) and applies [`observe`](http://docs.meteor.com/#/full/observe) or [`observeChanges`](http://docs.meteor.com/#/full/observe_changes)
+
 `reverse()`: Reverses an array in place.

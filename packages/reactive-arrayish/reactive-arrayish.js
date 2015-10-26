@@ -62,6 +62,18 @@ ReactiveArrayish = function ReactiveArrayish(arr) {
 	var instance = this;
 
 
+	// .observe
+	instance.observe = function observe(selector, options, callbacks) {
+		collection.find(selector, options).observe(callbacks);
+	};
+
+
+	// .observeChanges
+	instance.observeChanges = function observeChanges(selector, options, callbacks) {
+		collection.find(selector, options).observeChanges(callbacks);
+	};
+
+
 	// .clear: remove everything
 	instance.clear = function clear() {
 		collection.remove({});
@@ -219,7 +231,7 @@ ReactiveArrayish = function ReactiveArrayish(arr) {
 		Array.prototype.splice.apply(idArray, args);
 
 		return resultSet;
-	};
+	}
 	instance.splice = splice;
 
 	// Get all: select, sort, map
