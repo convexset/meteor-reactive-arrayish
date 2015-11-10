@@ -12,6 +12,22 @@ The reactivity works nicely (with Blaze) because the object is backed by a local
 
 A nice-ish example is provided that requires `dburles:google-maps`. (It can be prettified using `semantic:ui`.)
 
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Install](#install)
+- [Usage](#usage)
+  - [Getters](#getters)
+  - [Population Control](#population-control)
+- [Updating/Replacing/Removing](#updatingreplacingremoving)
+  - [indexOf-type Methods](#indexof-type-methods)
+  - [Misc Methods](#misc-methods)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Install
 
 This is available as [`convexset:reactive-arrayish`](https://atmospherejs.com/convexset/reactive-arrayish) on [Atmosphere](https://atmospherejs.com/). (Install with `meteor add convexset:reactive-arrayish`.)
