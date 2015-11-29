@@ -64,13 +64,13 @@ ReactiveArrayish = function ReactiveArrayish(arr) {
 
 	// .observe
 	instance.observe = function observe(selector, options, callbacks) {
-		collection.find(selector, options).observe(callbacks);
+		return collection.find(selector, options).observe(callbacks);
 	};
 
 
 	// .observeChanges
 	instance.observeChanges = function observeChanges(selector, options, callbacks) {
-		collection.find(selector, options).observeChanges(callbacks);
+		return collection.find(selector, options).observeChanges(callbacks);
 	};
 
 
@@ -376,7 +376,7 @@ ReactiveArrayish = function ReactiveArrayish(arr) {
 			$set: setInfo
 		});
 	};
-	instance.updateBySelector = function updateById(selector, setInfo) {
+	instance.updateBySelector = function updateBySelector(selector, setInfo) {
 		checkKeys(setInfo);
 		return collection.update(selector, {
 			$set: setInfo

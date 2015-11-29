@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'convexset:reactive-arrayish',
-	version: '0.1.1',
+	version: '0.1.2',
 	summary: 'An array-like reactive collection that plays well with Blaze (i.e.: #each)',
 	git: 'https://github.com/convexset/meteor-reactive-arrayish',
 	documentation: '../../README.md'
