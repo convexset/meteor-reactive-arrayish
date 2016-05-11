@@ -1,5 +1,7 @@
 # ReactiveArrayish
 
+**This package is best viewed as deprecated.**
+
 This package was created to deal with (probably Blaze-related) reactivity problems with existing "Reactive Array" packages that conventional `_id` solutions failed to address. (... and that the original committer of this package might just have not been smart enough to properly diagnose.)
 
 In any event, this provides a "truly" reactive client-side object store that:
